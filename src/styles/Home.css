@@ -1,0 +1,74 @@
+/* Overall Container */
+.home-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #fcf3f8; /* Soft Pink Background */
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensures child absolute elements are positioned within this */
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+/* Fixed Headings: h1 & h2 */
+h1, h2 {
+  font-size: 3.2rem;  /* Slightly smaller for uniformity */
+  font-weight: bold;
+  color: #d63384; /* Deep Romantic Pink */
+  text-shadow: 2px 2px 8px rgba(214, 51, 132, 0.4);
+  margin-bottom: 15px;
+}
+
+/* Pulsating Text Effect */
+p {
+  font-size: 1.6rem;
+  color: #5a1a3d; /* Rich Plum */
+  font-weight: 500;
+  margin: 10px 0;
+  max-width: 800px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(90, 26, 61, 0.2);
+  animation: pulse 2s infinite;
+}
+
+/* Button */
+.next-button {
+  position: relative;
+  z-index: 10; /* Bring it above other elements */
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: #ff4d6d;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(255, 77, 109, 0.6);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+
+.next-button:hover {
+  background: white;
+  color: #ff4d6d;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(255, 77, 109, 0.8);
+}
+/* Pulsating Effect for Text */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

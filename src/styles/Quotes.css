@@ -1,0 +1,60 @@
+.quotes-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fce4ec; /* Soft pink background */
+  overflow: hidden;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Quote Box */
+.quote-box {
+  position: absolute;
+  width: 220px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  word-wrap: break-word;
+}
+
+/* Hover Effect */
+.quote-box:hover {
+  transform: scale(1.1);
+  background-color: #ffe0eb;
+}
+
+/* Next Button */
+.next-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; /* Moves the button to the bottom-right corner */
+  padding: 12px 25px;
+  background-color: #ff4081;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
